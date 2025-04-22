@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+<!-- caption -->
+   <h2 align="center">FORM REGISTRASI</h2>
+<!-- membuat element form, action untuk link ke biodata, menggunakan get post -->
+    <form action="biodata.html" method="get"|"post">
+        <!-- membuat table algin ketengah -->
+        <table align ="center" border="3" cellpadding="5" cellspacing="3">
+           <!-- membuat baris username -->
+            <tr> 
+                <td>Username</td>
+                <td>:</td>
+                <!-- input text username -->
+                <td><input type="text" name="username" ></td>
+            </tr>
+            <!-- membuat baris password -->
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <!-- input type password untuk menyembunyikan-->
+                <td><input type="password" name="password" ></td>
+            </tr>
+            <!-- membuat baris nama  -->
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <!-- input type text -->
+                <td><input type="text" name="nama_lengkap" ></td>
+            </tr>
+            <!-- membuat baris tempat tanggal lahir -->
+            <tr>
+                <td>Tempat dan Tanggal Lahir</td>
+                <td>:</td>
+                <!-- membuat input list -->
+                <td>
+                    <input type="text" name="tempat_lahir" placeholder="Tempat Lahir" >
+                   <!-- select tanggal -->
+                    <select name="tanggal" >
+                        <option>Tanggal</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <!-- select bulan -->
+                    <select name="bulan" required>
+                        <option>Bulan</option>
+                        <option>Januari</option>
+                        <option>Februari</option>
+                        <option>Maret</option>
+                        <option>April</option>
+                        <option>Mei</option>
+                        <option>Juni</option>
+                        <option>Juli</option>
+                        <option>Agustus</option>
+                        <option>September</option>
+                        <option>Oktober</option>
+                        <option>November</option>
+                        <option>Desember</option>
+                    </select>
+                    <!-- select tahun -->
+                    <select name="tahun" >
+                        <option>Tahun</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>2029</option>
+                        <option>2030</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- membuat baris alamat -->
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <!-- input type textarea agar input bisa lebih dari satu baris -->
+                <td><textarea rows="4" cols="30" name="alamat" ></textarea></td>
+            </tr>
+            <!-- membuat baris no telp -->
+            <tr>
+                <td>No. telp</td>
+                <td>:</td>
+                <!-- input type text -->
+                <td><input type="text" name="no_telp" ></td>
+            </tr>
+            <!-- membuat baris email -->
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>
+                    <!-- input type text -->
+                    <input type="text" name="email" > @ 
+                    <!-- input type list-->
+                    <select name="email_domain" >
+                        <option>Gmail.com</option>
+                        <option>Yahoo.com</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- membuat baris kelamin -->
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <!-- input type radio -->
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="pria" > Pria
+                    <input type="radio" name="jenis_kelamin" value="wanita" > Wanita
+                </td>
+            </tr>
+            <!-- membuat baris agama -->
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <!-- input type list -->
+                <td>
+                    <select name="agama" required>
+                        <option>Agama</option>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Hindu</option>
+                        <option>Buddha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- membuat baris hobi -->
+            <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <!-- input type checkbox -->
+                <td>
+                    <input type="checkbox" name="hobi" value="baca_buku" > Baca Buku
+                    <input type="checkbox" name="hobi" value="olahraga" > Olah Raga
+                    <input type="checkbox" name="hobi" value="main_game" > Main Game
+                    <input type="checkbox" name="hobi" value="hiking" > Hiking
+                </td>
+            </tr>
+            <!-- membuat baris upload photo -->
+            <tr>
+                <td>Upload Photo Anda</td>
+                <td>:</td>
+                <!-- input type file -->
+                <td><input type="file" name="upload_photo" ></td>
+            </tr>
+            <!-- membuat baris submit dan clear -->
+            <tr>
+                <td></td>
+                <td>:</td>
+                <!-- input type submit dan reset -->
+                <td>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

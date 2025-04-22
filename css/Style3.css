@@ -1,0 +1,49 @@
+/* pembuatan stle css umum untuk semua h1 */
+h1 {
+    font-family: 'poppins', sans-serif;
+    color :blueviolet;
+    font-size: 30px;
+}
+
+/* pembuatan ID untuk mengubah font, ketebalan, warna, dll. digunakan dalam isi konten */
+#teks1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 444;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color : navy;
+    font-size: 20px;
+}
+
+/* pembuatan private class yang digunakan pada h2 tertenty. digunakan pada header*/
+h2.title {
+    font-family: 'poppins', sans-serif;
+    font-size: 40px;
+    color: wheat;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+/* pembuatan public class, digunakan pada isi kontak*/
+.sisa{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 444;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    color : maroon;
+    font-size: 20px;
+}
+
+/* pembuatan group, yang bisa digunakan oleh h3 dan p, digunakan pada footer */
+h3, p {
+    font-family: sans-serif;
+    color: rgb(209, 78, 8);
+}
+
+/* ID untuk mengganti bgcolor, digunakan di semua body */
+#bgcolor{
+    background-color: rgb(227, 228, 251);
+}

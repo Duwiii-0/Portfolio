@@ -1,0 +1,383 @@
+/* 
+Kelas ini mengatur gaya untuk elemen body, termasuk font, 
+margin, padding, warna latar belakang, dan warna teks.
+*/
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #152a27;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    color: #e5f0ec;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk tautan, termasuk dekorasi teks, 
+  warna, dan padding.
+  */
+  a {
+    text-decoration: none;
+    color: #e5f0ec;
+    padding: 0 1em 0 1em;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur efek hover untuk tautan, termasuk 
+  perubahan warna.
+  */
+  a:hover {
+    color: #bfa86f;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk kontainer utama, termasuk 
+  lebar maksimum, margin, padding, warna latar belakang, 
+  border-radius, bayangan, dan penataan teks.
+  */
+  .container-c {
+    width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #374b48;
+    border-radius: 0.7em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk kontainer proyek, termasuk 
+  lebar maksimum, margin, padding, warna latar belakang, 
+  border-radius, bayangan, dan penataan teks.
+  */
+  .container-p-a-s {
+    width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #374b48;
+    border-radius: 0.7em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk header dalam kontainer, 
+  termasuk warna teks dan margin bawah.
+  */
+  .header-p-c-s {
+    color: #e5f0ec;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 1em;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk header tambahan, 
+  termasuk warna teks dan margin bawah.
+  */
+  .header-a {
+    color: #e5f0ec;
+    margin-bottom: 10px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 1em;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk daftar proyek, termasuk 
+  pengaturan flex dan jarak antar proyek.
+  */
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk setiap proyek, termasuk 
+  warna latar belakang, padding, border-radius, bayangan, 
+  dan penataan teks.
+  */
+  .project {
+    background-color: #1f2f2d;
+    padding: 20px;
+    border-radius: 0.7em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur efek hover untuk proyek, termasuk 
+  perubahan skala.
+  */
+  .project:hover {
+    transform: scale(1.03);
+  }
+  
+  /* 
+  Ini adalah kelas untuk skala proyek yang berbeda sesuai indeks
+  */
+  .project:nth-child(1):hover {
+    transform: scale(1.02);
+  }
+  
+  .project:nth-child(2):hover {
+    transform: scale(1.04);
+  }
+  
+  .project:nth-child(3):hover {
+    transform: scale(1.06);
+  }
+  
+  .project:nth-child(4):hover {
+    transform: scale(1.08);
+  }
+  
+  .project:nth-child(5):hover {
+    transform: scale(1.1);
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk judul proyek, termasuk 
+  margin dan warna teks.
+  */
+  .project h2 {
+    margin: 0 0 10px;
+    color: #e5f0ec;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 1.3em;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk paragraf dalam proyek, 
+  termasuk margin dan warna.
+  */
+  .project p {
+    margin: 0 0 10px;
+    color: #afb3b2;
+    font-size: 0.9em;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk tautan dalam proyek, 
+  termasuk dekorasi teks, warna, dan ketebalan font.
+  */
+  .project a {
+    text-decoration: none;
+    color: #e5f0ec;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 0.3em 0.6em;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya khusus untuk tautan "view project"
+  */
+  .project a.view-project {
+    color: #bfa86f;
+    text-decoration: underline;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 0.3em 0;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
+  /* 
+  Kelas ini mengatur efek hover untuk tautan view project, 
+  termasuk perubahan warna dan transisi.
+  */
+  .project a.view-project:hover {
+    color: #e5f0ec;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur efek hover untuk tautan dalam proyek, 
+  termasuk perubahan warna dan transisi.
+  */
+  .project a:hover {
+    color: #bfa86f;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk panah dalam proyek, 
+  termasuk posisi dan transisi.
+  */
+  .project .panah {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.7;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk footer, termasuk margin 
+  atas, ukuran font, dan warna teks.
+  */
+  .footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #afb3b2;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk panah kembali, termasuk 
+  posisi, dekorasi teks, ukuran font, warna, dan ketebalan font.
+  */
+  .back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #e5f0ec;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur efek hover untuk panah kembali, 
+  termasuk perubahan warna.
+  */
+  .back-arrow:hover {
+    color: #bfa86f;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk informasi kontak, termasuk 
+  ukuran font dan margin bawah.
+  */
+  .contact-info {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #afb3b2;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk tautan dalam informasi kontak, 
+  termasuk warna dan dekorasi teks.
+  */
+  .contact-info a {
+    color: #e5f0ec;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur efek hover untuk tautan dalam informasi 
+  kontak, termasuk perubahan warna.
+  */
+  .contact-info a:hover {
+    color: #bfa86f;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk judul tingkat 3, termasuk 
+  warna, margin bawah, dan ketebalan font.
+  */
+  h3 {
+    color: #e5f0ec;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Libre Baskerville', sans-serif;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk paragraf umum, termasuk 
+  ukuran font, tinggi baris, dan margin bawah.
+  */
+  p {
+    font-size: 0.9em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #afb3b2;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk teks yang disorot, termasuk 
+  warna dan ketebalan font.
+  */
+  .highlight {
+    color: #e5f0ec;
+    font-weight: 600;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk judul tingkat 1, termasuk 
+  warna dan margin bawah.
+  */
+  h1 {
+    color: #e5f0ec;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk daftar keterampilan, termasuk 
+  pengaturan flex dan penataan teks.
+  */
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk setiap keterampilan, termasuk 
+  warna latar belakang, padding, border-radius, dan bayangan.
+  */
+  .skill {
+    background-color: #1f2f2d;
+    padding: 15px;
+    border-radius: 0.7em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* 
+  Kelas ini mengatur efek hover untuk keterampilan
+  */
+  .skill:hover {
+    transform: scale(1.03);
+  }
+  
+  /* 
+  Kelas ini mengatur gaya untuk judul keterampilan, termasuk 
+  margin dan warna teks.
+  */
+  .skill h2 {
+    margin: 0 0 5px;
+    color: #e5f0ec;
+    font-family: 'Libre Baskerville', sans-serif;
+  }
